@@ -11,17 +11,13 @@ import sys
 # Complete the countingValleys function below.
 def countingValleys(n, s):
     height, numValleys = 0,0
-    inValley = False
     for i in s:
         if i == 'D':
             height -= 1
-        if i == 'U': 
+        else:
+            if height == -1:
+              numValleys += 1
             height += 1
-        if height < 0:
-            inValley = True
-        if inValley and height == 0: 
-            numValleys += 1
-            inValley = False
     return numValleys
 
 if __name__ == '__main__':
