@@ -1,4 +1,4 @@
-#!/bin/python
+#https://www.hackerrank.com/challenges/capitalize/problem
 
 import math
 import os
